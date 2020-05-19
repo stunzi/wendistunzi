@@ -273,6 +273,94 @@ a {
   line-height: 26px;
 }
 
+.counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 100px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.box.days {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clock-number {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  font-size: 64px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.clock-label {
+  margin-top: 8px;
+  margin-right: -5px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
     padding-right: 5px;
@@ -363,4 +451,19 @@ a {
     font-size: 24px;
     line-height: 32px;
   }
+  .counter {
+    display: none;
+    min-height: 115px;
+  }
+  .box {
+    width: 70px;
+    height: 120px;
+  }
+  .box.sec {
+    display: none;
+  }
+  .clock-number {
+    font-size: 60px;
+  }
 }
+
